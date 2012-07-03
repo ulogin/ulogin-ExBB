@@ -30,7 +30,7 @@ echo <<<DATA
 DATA;
 
 if ($fm->user['id'] == 0)
-echo '<div id="uLogin" x-ulogin-params="display=small;fields=first_name,last_name,email;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=twitter,google,yandex,livejournal,openid,lastfm,linkedin,liveid,soundcloud,steam;redirect_uri='.urlencode('http://'.$_SERVER['HTTP_HOST'].'/ulogin.php').'"></div>';
+echo '<div id="uLogin" x-ulogin-params="display=small;fields=first_name,last_name,email;providers=vkontakte,odnoklassniki,mailru,facebook;hidden=other;redirect_uri='.urlencode('http://'.$_SERVER['HTTP_HOST'].'/ulogin.php').'"></div>';
 
 echo <<<DATA
                     </td>
